@@ -28,6 +28,7 @@ print(type(student))
 # Strings & Lists in  Python they both are different Data types
 # Strings is immutable(can't be changed) but can access only
 # Lists is mutable(can be changed) but also can access
+# we can access elements of lists within the range
 str = "Hello, Welcome to Python HomeLand"
 print(str[0])
 # str[0] = "Y"
