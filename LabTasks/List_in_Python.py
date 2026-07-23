@@ -34,5 +34,50 @@ print(str[0])
 # str[0] = "Y"
 student[0] = "ProfAbdullah"
 print(student)
-print(student[6])
+# print(student[6])#index out of bound exception
 
+# Slicing in Lists called Sublist
+# syntax : list_name = [starting_idx, ending_idx] => ending idx is not included
+# similar to string slicing
+# negative index ke basis per bhi slicing possible hai
+marks = [87, 95, 78, 63, 46]
+print(marks[1: 4])
+print(marks[: 4])
+print(marks[0:])
+print(marks[-3: -1])
+
+
+# Lists Specific Methods
+#1. Adds the element at the end
+list = [65,67,87,43,56]
+list.append(4) # mutating the list allowed in list
+print(list)
+# sort the lists in ascending order
+print(list.append(5))# return nothing
+print(list.sort())# return nothing
+list.sort()
+print(list)
+
+list.sort(reverse = True)
+print("Sorted List in Descending order : " , list)
+
+# Sorted List
+l = ['a', 'd', 'e' , 'f', 'c', 'b']
+l.sort()
+print("Sorted List : " , l)
+
+# Reverses List
+l.reverse()
+print("Reverse List : " , l)
+
+# Insert Element at particular index
+list.insert(2,44)
+print("Add element 44 at index 2 : ", list)
+
+# Removes First occurrence of element
+list.remove(67)
+print("Removes 67 from list : " , list)
+
+# Removes element at particular index
+list.pop(0)
+print("Removes 0 index value : " , list)
