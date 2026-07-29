@@ -25,6 +25,57 @@ print("topics : ", info["topics"])
 
 # change the value of a particular key
 info["name"] = "DrProfAbdullah"
+info["surname"] = "Khalid"# add a new key value pair in the dictionary
+# so it means dictionary in python is mutable(changeable)
+# if we want to add a name and it's value as a new key value pair form,so it is not possible in Python
+# because in this case old value of name becomes overwrite 
+# instead of creating a new key value pair with the same key(existing key),Python overwrite the old value of the existing key
+# we can create an empty dictionary as well 
 
 print(info)
+
+null_dict = {}
+null_dict["name"] = "mycollege"
+print(null_dict)
+
+
+# Nested Dictionary :-
+student = {
+   "name" : "ProfAbdul",
+   "scores" : {
+       "Physics" : 97,
+       "Chemistry" : 98,
+       "Math" : 99
+   }
+}
+
+print(student)
+# Getting the relevant info from Nested Dictionaries
+print("Physics Marks : " , student["scores"]["Physics"])
+print("Chemistry Marks : " , student["scores"]["Chemistry"])
+print("Math Marks : " , student["scores"]["Math"])
+
+# Dictionary Methods :-
+# myDict.key() returns the collection of all keys except nested key
+print(student.keys()) 
+print(list(student.keys()))  # type casting
+print("Length of Dictionary : " , len(student))
+print("Length of Dictionary : " , len(list(student.keys())))
+# return all the values of dictionary
+print(student.values())
+print(list(student.values()))
+# return all key value pairs (key,value) as(in the form of) tuples
+print(student.items())
+print(list(student.items()))
+pairs = list(student.items())
+print("Tuple1 := " , pairs[0])
+print("Tuple1 item1 := " , pairs[0][0])
+print("Tuple1 item2 := " , pairs[0][1])
+print("Tuple2 := " , pairs[1])
+print("Tuple2 item1 := " , pairs[1][0])
+print("Tuple2 item2 := " , pairs[1][1])
+
+
+
+
 
