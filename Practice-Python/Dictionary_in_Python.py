@@ -75,7 +75,22 @@ print("Tuple2 := " , pairs[1])
 print("Tuple2 item1 := " , pairs[1][0])
 print("Tuple2 item2 := " , pairs[1][1])
 
+# return the value according to the key
+print("Name : ", student["name"])
+# Problematic thing in Programming
+print("BEFORE")
+# print("Name : ", student["name2"])
+print("AFTER")
+print("Name : " ,student.get("name"))
+print("Name : " ,student.get("name2"))
 
+# update the dictionary items(add new items) in dictionary
+student.update({"city" : "Karachi"})
+# doesn't allowed duplicate values
+new_dict = {"address" : "L-444 sector : 5A/2 North Karachi", "name" : "Abdullah Khalid"}
+student.update(new_dict)
+
+print(student)
 
 
 
