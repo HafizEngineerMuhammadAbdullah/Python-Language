@@ -52,3 +52,42 @@ set1 = {1,2,3}
 set2 = {3,4,5}
 print("Combined/Union of two Sets : ", set1.union(set2))
 print("Combined/Intersection of Two Sets : ", set1.intersection(set2))
+
+
+# Practice Questions :-
+# 1.
+dictionary = {
+    'table' : ['a piece of furniture','list of facts & figures'],
+    'cat' : 'a small domesticated carnivorous mammal'
+}
+
+print(dictionary)
+
+
+# 2.
+subjects = {"Python", "Java","Javascript","C++","C"}
+
+print(len(subjects))
+
+
+# 3.
+marks = {}
+
+x = int(input("Enter Physics marks : "))
+marks.update({"Physics" : x})
+y = int(input("Enter Chemistry marks : "))
+marks.update({"Chemistry" : y})
+z = int(input("Enter Math marks : "))
+marks.update({"Mathematics" : z})
+
+print(marks)
+
+# 4.
+values = {1,2,3,4,5,6,7,8,8.0,9,9.0,10}
+values = {
+    ("float", 8.0),
+    ("int", 8),
+    ("float", 9.0),
+    ("int", 9)
+}
+print(values)
