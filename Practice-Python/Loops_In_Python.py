@@ -22,3 +22,48 @@ while i > 0:
     print(i)
     i -= 1
 print("Loop Ended")
+
+
+
+# 1.Print Numbers from 1 to 100
+i = 1
+while i <= 100:
+    print(i)
+    i += 1
+
+# 2.Print Numbers from 100 to 1
+i = 100
+while i > 0:
+    print(i)
+    i -= 1 
+
+
+# Print the multiplication table of a number n
+n = int(input("Please,Enter a number : "))
+
+i = 1
+while i <= 100 :
+    print(n , '*' , i , '=', n*i)
+    i += 1
+
+# print the elements of the follwing list using a loop:-
+# list = [1,4,9,16,25,36,49,64,81,100]
+list = [1,4,9,16,25,36,49,64,81,100]
+i = 0
+while i < len(list) :
+    print(list[i])
+    i += 1
+
+# Search for a number x in this tuple using loop
+tuple = (1,4,9,16,25,36,49,64,81,100)
+x = 9
+i = 0
+while i < len(tuple) :
+    if(x == tuple[i]) :
+        print(x , "found")
+
+    i += 1
+
+
+
+
