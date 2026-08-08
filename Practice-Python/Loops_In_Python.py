@@ -60,10 +60,27 @@ x = 9
 i = 0
 while i < len(tuple) :
     if(x == tuple[i]) :
-        print(x , "found")
+        print(x , "found at ", i)
 
     i += 1
 
+# Break statement:-
+# The break statement is used to terminate the loop when a certain condition is met.
+i = 1
+while i <= 10:
+    if(i == 5):
+        break
+    print(i)
+    i += 1
 
+# Continue Statement:-
+# The Continue statement is used to skip the current iteration of the loop and continue with the next iteration.
+i = 1
+while i <= 10:
+    if(i == 5):
+        i += 1
+        continue #skip
+    print(i)
+    i += 1 
 
 
