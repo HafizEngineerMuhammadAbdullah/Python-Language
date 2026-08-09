@@ -83,4 +83,39 @@ while i <= 10:
     print(i)
     i += 1 
 
+# for Loop:- it is used for sequential traversing,iterating either list,tuples,string etc
 
+nums  = [1,2,3,4,5]
+for val in nums:
+    print(val)
+
+veggies = ["potato","ladyfinger","cucumber","brinjal"]
+for val in veggies:
+    print(val)
+
+tup = (1,2,3,4,56,89,0)
+for val in tup:
+    print(val)
+
+str = "adamjeegovernmentsciencecollege"
+for char in str:
+    print(char)
+else:
+    print("END")
+
+for char in str:
+    if(char == 'a'):
+        print('o found')
+        break
+    print(char)
+else:
+    print("END")
+
+
+for char in str:
+    if(char == 'a'):
+        print('o found')
+        break
+    print(char)
+
+print("END")
