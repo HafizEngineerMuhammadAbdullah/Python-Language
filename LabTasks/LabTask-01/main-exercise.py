@@ -57,7 +57,7 @@ SYSTEM_METADATA = ("SYS-2026", "v1.0", "University Academic Portal")
 course_catalog = ["CS101", "CS102", "MATH201", "ENG101"]
 
 # ------------------------------------------------------------------------------
-# TASK 6: DICTIONARY USAGE
+# TASK 6: DICTIONARY USAGE            
 # ------------------------------------------------------------------------------
 # Nested dictionary to store student records, profiles, and subject grades
 students_db = {
@@ -98,18 +98,18 @@ def display_all_students():
     """
     print("\n--- ALL STUDENT ACADEMIC RECORDS ---")
     
-    # Task 9: Iterating over key-value pairs of the nested dictionary
+    # Task 9: Iterating over key-value pairs of the nested dictionary(for Loop)
     for student_id, details in students_db.items():
         name = details["name"]
         major = details["major"]
         scores_dict = details["scores"]
         
-        # Task 5: Arithmetic operators (+ and /)
+        # Task 5: Arithmetic operators (+ and /)(Operators)
         total_marks = sum(scores_dict.values())
         total_subjects = len(scores_dict)
         average = total_marks / total_subjects if total_subjects > 0 else 0.0
         
-        # Task 8: Conditional pass/fail check
+        # Task 8: Conditional pass/fail check(Conditional Statements)
         grade = calculate_grade(average)
         is_passed = average >= passing_score  # Task 5: Relational operator (>=)
         status = "PASSED" if is_passed else "FAILED"
@@ -139,9 +139,9 @@ def add_student():
     scores = {}
     print("\nEnter scores for available catalog courses (0-100):")
     
-    # Task 9: Loop through list of courses
+    # Task 9: For Loop --- Loop through list of courses
     for course in course_catalog:
-        # Task 10: Input validation loop using while True
+        # Task 10: Input validation loop using while True(User Input & While Loop)
         while True:
             try:
                 score_str = input(f"  Score for {course}: ")
@@ -156,7 +156,7 @@ def add_student():
             except ValueError:
                 print("    Invalid input! Enter a valid numeric score.")
 
-    # Task 6: Updating dictionary with new key-value entry
+    # Task 6: Updating dictionary with new key-value entry(Dictionary Usage)
     students_db[student_id] = {
         "name": name,
         "major": major,
@@ -174,7 +174,7 @@ def main():
     print(f"  System ID: {SYSTEM_METADATA[0]} | Version: {SYSTEM_METADATA[1]}")
     print("=" * 60)
 
-    # Task 10: Interactive CLI application loop
+    # Task 10: Interactive CLI application loop(User Input & While Loop)
     while is_system_active:
         print("\n--- MENU OPTIONS ---")
         print("1. View All Student Records")
@@ -185,7 +185,7 @@ def main():
         # Task 10: User Input
         user_choice = input("\nSelect an option (1-4): ").strip()
 
-        # Task 8: Decision control logic
+        # Task 8: Decision control logic(Conditional Statements)
         if user_choice == "1":
             display_all_students()
         elif user_choice == "2":
