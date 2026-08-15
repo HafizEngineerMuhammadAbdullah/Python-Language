@@ -119,3 +119,35 @@ for char in str:
     print(char)
 
 print("END")
+
+
+# for Loops
+# Print the elements of the following list using a loop
+nums = [1,4,9,16,25,36,49,64,81,100]
+
+for el in nums:
+    print(el, end=" ")
+
+
+print()
+
+# Search for a number x in this tuple using loop
+nums = (1,4,9,16,25,36,49,64,81,100)
+
+x = 49
+idx = 0
+for el in nums:
+    if(el == x):
+        print("number 49 at found idx!", idx)
+    idx += 1
+
+
+# Separate numbers by a space
+# for i in range(1, 6):
+#     print(i, end=" ")
+# # Output: 1 2 3 4 5
+
+# # Separate numbers without spaces
+# for i in range(1, 6):
+#     print(i, end="")
+# # Output: 12345
