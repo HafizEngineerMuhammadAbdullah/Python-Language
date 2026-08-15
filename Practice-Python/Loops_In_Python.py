@@ -151,3 +151,39 @@ for el in nums:
 # for i in range(1, 6):
 #     print(i, end="")
 # # Output: 12345
+
+print(range(5))
+print(range(1,4))
+seq = range(5)
+print(seq[0])
+print(seq[1])
+print(seq[2])
+print(seq[3])
+print(seq[4])
+print(type(seq))
+
+for i in range(10): # range(stop)
+    print(i,end=" ")
+
+print()
+
+for i in range(2,10): # range(start, stop)
+    print(i,end=" ")
+
+print()
+for i in range(0,10,2): # range(stop)
+    print(i,end=" ")
+
+print()
+
+for i in range(1,101):
+    print(i,end=" ")
+
+for i in range(100,0,-1):
+    print(i,end=" ")
+
+n = int(input("Enter a number : "))
+
+print()
+for i in range(1,10):
+    print(n , " x ",i, " = " , n*i )
