@@ -187,3 +187,39 @@ n = int(input("Enter a number : "))
 print()
 for i in range(1,10):
     print(n , " x ",i, " = " , n*i )
+
+
+for i in range(10):
+    #some work
+    pass
+
+if i > 12:
+   pass
+
+print("Work Completed!")
+
+# Write a Program to find the sum of first n natural numbers(using while)
+n = int(input("Enter a number :- "))
+
+sum = 0
+i = 1
+while i <= n:
+    sum += i
+    i += 1
+
+# for i in range(1,n+1):
+#     sum += i
+
+print("Total Sum = " , sum)
+
+# Write a Program to find the factorial of first n natural numbers(using for)
+n = int(input("Enter a number :- "))
+
+factorial = 1
+
+for i in range(1,n):
+    factorial *= i
+
+print("Factorial = " , factorial)
+
+
