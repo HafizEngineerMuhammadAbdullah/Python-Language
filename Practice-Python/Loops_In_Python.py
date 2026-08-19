@@ -221,5 +221,3 @@ for i in range(1,n):
     factorial *= i
 
 print("Factorial = " , factorial)
-
-
