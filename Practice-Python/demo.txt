@@ -1,0 +1,3 @@
+I am Learning too many computer science core subjects in this semester
+like Operating System, Database Management System(DBMS),Artificial Intelligence(AI),
+Computer Organization and Assembly Language(COAL) etc
