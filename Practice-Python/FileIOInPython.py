@@ -1,3 +1,4 @@
+import os
 # try:
 #     f = open("demo.txt", "r")
 #     # data = f.read()
@@ -21,10 +22,17 @@
 # Computer Organization and Assembly Language(COAL) etc
 
 try:
-    f = open("demo.txt","r+")
+    f = open("demo.txt","a+")
     f.write("\nHi,I will learn AI tomorrow as my exam is going to come!")
     print(f.read())
     f.close()
 except FileNotFoundError:
    print("Error: The file 'demo.txt' does not exist in this directory.")
+
+with open("demo.txt", "r") as f:
+    data = f.read()
+    print(data)
+
+# Deleting a File using Module
+os.remove("sample.txt")
 
