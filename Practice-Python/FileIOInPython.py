@@ -136,3 +136,38 @@ check_for_number()
 
 # Call the function to test it
 # check_for_number()
+
+def check_for_number():
+    number_list = []
+    with open("practice2.txt", "r") as f:
+        data = f.read()
+        print(data)
+        number = ""
+        for i in range(len(data)):
+            if(data[i] == ","):
+                print(int(number))
+                number = ""
+            else:
+                number += data[i]
+
+
+    print(number_list)
+
+
+check_for_number()
+
+
+
+def check_for_number():
+    count = 0
+    with open("practice2.txt", "r") as f:
+        data = f.read()
+        print(data)
+        number_list = data.split(",")
+        for val in number_list:
+            if(int(val) % 2 == 0):
+                count += 1
+
+    print("Count of Even Number : ", count)
+check_for_number()
+
