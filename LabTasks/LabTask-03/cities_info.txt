@@ -1,0 +1,3 @@
+Name		Population		Mayor
+Rawalpindi	123,000	Prof Abdullah
+Faislabad	345,0000	Abdullah Khalid
