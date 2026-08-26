@@ -17,8 +17,10 @@ b = 56
 sum = a + b
 print(sum)
 
-# this is the etire function to calculate the sum of two numbers
+# this is the entire function to calculate the sum of two numbers
 def calc_sum(a,b):
     sum = a + b
     print(sum)
     return sum
+
+calc_sum(2,3)
