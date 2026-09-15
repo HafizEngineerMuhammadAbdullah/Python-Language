@@ -24,3 +24,15 @@ def calc_sum(a,b):
     return sum
 
 calc_sum(2,3)
+
+# function definition
+def calc_sum(a,b): #parameters
+    return a + b
+
+calc_sum(1,2) # function call;arguments 
+
+def print_hello():
+    print("hello")
+
+output = print_hello()
+print(output)

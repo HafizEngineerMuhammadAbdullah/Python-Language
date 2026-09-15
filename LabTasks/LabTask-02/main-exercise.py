@@ -8,6 +8,7 @@ cube_height = int(input("Please, Enter the height of box in cm3:..."))
 cube_width = int(input("Please, Enter the width of box in cm3:..."))
 cube_depth = int(input("Please, Enter the depth of box in cm3:..."))
 
+
 volume = cube_height * cube_width * cube_depth
 
 if volume >= 1 and volume <= 10:
@@ -39,6 +40,7 @@ job_exec_time = int(
     input("Kindly, Enter time you take to complete a particular job in hours!")
 )
 
+
 if job_exec_time >= 2 and job_exec_time <= 3:
     print("Highly Efficient Employee you are,Excellent job!")
 elif job_exec_time >= 3 and job_exec_time <= 4:
@@ -49,6 +51,7 @@ elif job_exec_time > 5:
     print("Dear Employee,you are requested to leave the company!")
 else:
     print("Go to Hell!")
+
 
 # Exercise III : The program must prompt the user for a username and password. The program should compare
 # the password given by the user to a known password. If the password matches, the program should
