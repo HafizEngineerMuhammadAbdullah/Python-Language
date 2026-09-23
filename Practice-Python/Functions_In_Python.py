@@ -36,3 +36,19 @@ def print_hello():
 
 output = print_hello()
 print(output)
+
+
+
+# average of 3 nums
+def calc_avg(a,b,c):
+    sum = a + b + c
+    avg = sum / 3
+    print("Average is", avg)
+    return avg
+
+
+calc_avg(1,2,3)
+
+print("mycollege","abdullah") #sep(separator) = " "
+print("mycollege") #end = "\n"
+print("abdullah")
