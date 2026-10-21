@@ -1,3 +1,13 @@
+def random_search_algo():
+def open_list_search_algo():
+def closed_list_search_algo():
+def bfs_search_algo():
+def dfs_search_algo():
+def dijkstras_search_algo():
+
+
+
+
 def main():
     while True:
         print("Menu Driven Python Program:")
