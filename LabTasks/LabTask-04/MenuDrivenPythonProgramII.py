@@ -15,7 +15,7 @@ def main():
         print("Which Searching Algorithm do you wanna choose :...")
         print("1. Random Search Algorithm")
         print("2. Closed List Search Algorithm")
-        print("3. Open List Search Algorithm")
+        print("3. Open List Search Algorithm")  
         print("4. Dijkstra's(Uniform Cost) Search Algorithm")
         print("5. Breadth First Search(BFS) Algorithm")
         print("6. Depth First Search(DFS) Algorithm")
